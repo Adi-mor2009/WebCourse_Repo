@@ -3,8 +3,39 @@ body {
     direction: rtl;
     text-align: right;
 }
+* {
+    box-sizing: border-box;
+}
+#header_page {
+    height: 105px;
+    width: 100%;
+    background-color: gray;
+}
+#main_page {
+    width: 900px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.column {
+    flex-basis: 33.333%;
+}
+.img_sizing {
+    width: 291px;
+    height: 354px;
+}
+.row2-col {
+    width: 244px;
+    height: 216px;
+    border: 2px solid black;
+}
 footer {
     position: fixed;
     bottom: 0;
     background-color: gray;
+    height: 38px;
+    width: 100%;
 }
