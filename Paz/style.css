@@ -1,0 +1,10 @@
+body {
+    font-family: Arial;
+    direction: rtl;
+    text-align: right;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: gray;
+}
