@@ -6,10 +6,73 @@ body {
 * {
     box-sizing: border-box;
 }
-#header_page {
+header {
     height: 105px;
     width: 100%;
     background-color: gray;
+}
+#inside_header {
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+#h_logo {
+    position: relative;
+    top: 20px;
+}
+header > div > nav > ul {
+    display: flex;
+    list-style: none;
+    /* list-style: url('./images/images/menu_sep.png'); */
+    padding: 0;
+}
+header > div > nav > ul > li:not(:first-child):before {
+    content: url('./images/images/menu_sep.png');
+    margin: 0 5px;
+}
+header > div > nav > ul > li {
+    margin: 0 5px;
+}
+header > div > nav > ul > li > a, .dropdown-content > a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 16px;
+    text-decoration: none;
+    /* padding: 10px; */
+    display: inline-block;
+}
+header > div > nav > ul > li > a:hover, .dropdown-content:hover > a {
+    color: blue;
+    /* font-weight: bold; */
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 16px;
+    text-decoration: underline;
+    /* padding: 10px; */
+}
+.dropdown {
+    position: relative;
+}
+  
+.dropdown-content {
+    background-color: gray;
+    position: absolute;
+    padding: 20px;
+    display: none;
+    right: 30%;
+    box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.5);
+}
+header > div > nav > ul > li >div[class="dropdown-content"]:not(:first-child):before {
+    content: url('./images/images/menu_dropdown_sep.png');
+    margin: 5px 0;
+}
+.dropdown:hover > .dropdown-content {
+    display: block;
 }
 #main_page {
     width: 900px;
