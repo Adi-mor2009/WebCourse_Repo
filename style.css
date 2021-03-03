@@ -139,23 +139,62 @@ header > div > nav > ul > li >div[class="dropdown-content"]:not(:first-child):be
     border-radius: 0px 20px 0px 0px;
     padding: 0 0 0 2px;
     margin: 0 4px;
+    background: linear-gradient(to bottom, #fff 20%, #d3d3d3);
 }
 .inner_row2-col {
     width: 244px;
     height: 216px;
     padding: 0px, 24px;
     color: #575757;
+    position: relative;
+    margin: auto;
 }
-div[class="row"] > div[class="column"] > div[class="row2-col"] > h3 {
+.inner_row2-col > h3 {
+    position: absolute;
+    /* height: 34px; */
+    right: 20px;
+    /* line-height: 34px; */
+    font-size: 14px;
+    font-weight: bold;
+    margin: 1px;
+    /* text-underline-position: below; */
+    width: max-content;
+}
+.inner_row2-col > div > hr {
+    border-top: 1px solid rgb(228, 226, 226);
+    position: relative;
+    top: 25px;
+}
+/* div[class="row"] > div[class="column"] > div[class="row2-col"] > h3 {
     height: 34px;
     right: 25px;
     line-height: 34px;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 6px;
-}
-#gas_map, #invest_rel {
+} */
+#invest_rel {
     float: left;
+    top: 30px;
+    position: relative;
+    border-radius: 0px 0px 0px 10px;
+}
+#card {
+    top: 30px;
+    position: relative;
+}
+#gas_map {
+    float: left;
+    top: 20px;
+    position: relative;
+}
+.inner_row2-col > p {
+    font-size: 13px;
+    position: relative;
+    top: 30px;
+}
+.inner_row2-col > p > a {
+    display: block;
 }
 #minimaized_img {
     width: 20px;
@@ -225,4 +264,7 @@ footer > div > nav > ul > li > a:hover {
     color: white;
     margin-top: 10px;
     margin-left: 20px;
+}
+#give_height {
+    height: 30px;;
 }
