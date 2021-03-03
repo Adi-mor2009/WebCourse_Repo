@@ -280,3 +280,35 @@ footer > div > nav > ul > li > a:hover {
 #give_height {
     height: 30px;;
 }
+#form_wrapper {
+    width: 347px;
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    min-height: 332px;
+    padding: 12px 18px;
+    border-radius: 0px 20px 0px 0px;
+    background: linear-gradient(to bottom, #fff 20%, #d3d3d3);
+    position: relative;
+}
+#form_wrapper > h2 {
+    color: #005ca0;
+    font-weight: bold;
+    font-size: 15px;
+}
+#form_wrapper > #info {
+    display: block;
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 5px 0;
+}
+#form_wrapper > #required_fields {
+    font-size: 12px;
+}
+#my-form > div > label {
+    font-size: 12px;
+    display: inline-block;
+    width: 150px;
+}

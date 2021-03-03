@@ -99,77 +99,41 @@
             <div class="row">
                 <div class="column">
                     <div class="content">
-                      <img class="row1-img" src="./images/images/1908364606615453350.JPG" alt="קמעונאות ומסחר">
-                      <div class="text_area_on_top">
-                        <h3>קמעונאות ומסחר</h3>
-                        <p>במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</p>
-                        <a href="#">קרא עוד</a>
-                        <img src="./images/images/read_more_white.png" alt="read more">
-                      </div>
+                        <div id="form_wrapper">
+                            <h2>צור קשר</h2>
+                            <span id="info">ליצירת קשר איתנו בכל נושא אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</span>
+                            <span id="required_fields">* השדות המסומנים בכוכבית (*) הינם שדות חובה</span>
+                            <form id="my-form">
+                                <div>
+                                  <label for="fname">שם פרטי *</label>
+                                  <input type="text" id="fname" maxlength="10" required>
+                                </div>
+                                <div>
+                                  <label for="lname">שם משפחה *</label>
+                                  <input type="text" id="lname" maxlength="10">
+                                </div>
+                                <div>
+                                  <label for="id">טלפון *</label>
+                                  <input type="text" id="id" pattern="[0-9]{9}" maxlength="9">
+                                </div>
+                                <div>
+                                  <label for="email">E-mail *</label>
+                                  <input type="email" id="email">
+                                </div>
+                                <div>
+                                    <label for="comments"></label>
+                                    <textarea rows="4" cols="30" placeholder="תוכן הפנייה"></textarea>
+                                </div>
+                                <button type="button" onclick="sendForm()">שלח</button>
+                              </form>
+                        </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="content">
-                      <img class="row1-img" src="./images/images/Picture-046410251500.jpg" alt="זיקוק">
-                      <div class="text_area_on_top">
-                        <h3>זיקוק</h3>
-                        <p>פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז. החטיבה עוסקת בניהול פעילות בית הזיקוק באשדוד, הכוללת ייצור תזקיקי נפט...</p>
-                      </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="content">
-                      <img class="row1-img" src="./images/images/╫ñ╫צ╫º╫¿_-291_354410564000.jpg" alt="תעשיות ושירותים">
-                      <div class="text_area_on_top">
-                        <h3>תעשיות ושירותים</h3>
-                        <p>תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של נפט, ומובילות את השוק...</p>
-                      </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="column">
-                    <div class="row2-col">
-                        <div class="inner_row2-col">
-                            <h3>קשרי משקיעים</h3>
-                            <div><hr></div>
-                            <img id="invest_rel" src="./images/images/21835282443042595250.jpg" alt="התחנות שלנו בדרך שלך">
-                            <p>פז, 90 שנה של הובלה ומנהיגות במשק ובשוק האנרגיה בישראל. הצבת סטנדרטים גבוהים בשירות, מצוינות תפעולית, איתנות ושמרנות פיננסית וצמיחה עסקית מתמשכת.</p>
-                            <p>
-                              <a href="#">לעמוד דו"חות כספיים<img src="./images/images/read_more_yellow.png" alt=""></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="row2-col">
-                        <div class="inner_row2-col">
-                            <h3>כרטיס אשראי שופרסל וכרטיס אשראי יש</h3>
-                            <div><hr></div>
-                            <img id="card" src="./images/images/paz_250x110059890678.jpg" alt="התחנות שלנו בדרך שלך">
-                            <p>
-                              <a href="#">לפרטים נוספים<img src="./images/images/read_more_yellow.png" alt=""></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="row2-col">
-                        <div class="inner_row2-col">
-                            <h3>התחנות שלנו בדרך שלך</h3>
-                            <div><hr></div>
-                            <img id="gas_map" src="./images/images/Untitled-3058756287.jpg" alt="התחנות שלנו בדרך שלך">
-                            <p>
-                              <a href="#">צפון<img src="./images/images/read_more_yellow.png" alt=""></a>
-                              <a href="#">מרכז<img src="./images/images/read_more_yellow.png" alt=""></a>
-                              <a href="#">דרום<img src="./images/images/read_more_yellow.png" alt=""></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div id="give_height"></div>
     </main>
     <footer>
@@ -201,7 +165,7 @@
                     <a href="#">מפת אתר</a>
                   </li>
                   <li>
-                    <a href="./contact.html">צור קשר</a>
+                    <a href="mailto:info@site.com">צור קשר</a>
                   </li>
                   <li><a href="#"><img src="./images/images/white_logo.png" alt=""></a></li>
                 </ul>
