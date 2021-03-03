@@ -2,6 +2,7 @@ body {
     font-family: Arial;
     direction: rtl;
     text-align: right;
+    margin: 0;
 }
 * {
     box-sizing: border-box;
@@ -49,12 +50,7 @@ header > div > nav > ul > li > a, .dropdown-content > a {
 }
 header > div > nav > ul > li > a:hover, .dropdown-content:hover > a {
     color: blue;
-    /* font-weight: bold; */
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 16px;
     text-decoration: underline;
-    /* padding: 10px; */
 }
 .dropdown {
     position: relative;
